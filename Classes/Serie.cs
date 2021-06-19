@@ -3,7 +3,7 @@ using System;
 namespace Series
 {
     // Classe que herda da EntidadeBase
-    public class Series : EntidadeBase
+    public class Serie : EntidadeBase
     {
         // Atributos
 
@@ -31,9 +31,9 @@ namespace Series
         public override string ToString()
         {
             string retorno = "";
-            retorno += "Gênero: " + this.Genero + Enviroment.NewLine;
-            retorno += "Titulo: " + this.Titulo + Enviroment.NewLine;
-            retorno += "Descrição: " + this.Descricao + Enviroment.NewLine;
+            retorno += "Gênero: " + this.Genero + Environment.NewLine;
+            retorno += "Titulo: " + this.Titulo + Environment.NewLine;
+            retorno += "Descrição: " + this.Descricao + Environment.NewLine;
             retorno += "Ano de início: " + this.Ano;
 
             return retorno;
@@ -49,6 +49,11 @@ namespace Series
         public int retornaId()
         {
             return this.Id;
+        }
+
+        public bool retornaExcluido()
+        {
+            return this.Excluido;
         }
 
         public void Excluir()

@@ -2,20 +2,20 @@ using System;
 using System.Collections.Generic;
 using Series.Interfaces;
 
-namespace Series.Classes
+namespace Series
 {
     // Implementa um repositório de séries
     public class SerieRepositorio : IRepositorio<Serie>
     {
         // Lista de séries
-        public List<Serie> listaSerie = new List<Serie>();
+        private List<Serie> listaSerie = new List<Serie>();
 
         public void Atualiza(int id, Serie objeto)
         {
             listaSerie[id] = objeto;
         }
 
-        public void Excluir(int id)
+        public void Exclui(int id)
         {
             // Poderíamos usar RemoveAt(), mas isso reclassificaria os próximos itens da lista
 

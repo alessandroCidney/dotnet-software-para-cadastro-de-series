@@ -1,0 +1,16 @@
+D:\Fabinho\Documents\Alessandro\Programação\Cursos\Criando um APP simples de cadastro de séries em .NET\Series\obj\Debug\net5.0\Series.csprojAssemblyReference.cache
+D:\Fabinho\Documents\Alessandro\Programação\Cursos\Criando um APP simples de cadastro de séries em .NET\Series\obj\Debug\net5.0\Series.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fabinho\Documents\Alessandro\Programação\Cursos\Criando um APP simples de cadastro de séries em .NET\Series\obj\Debug\net5.0\Series.AssemblyInfoInputs.cache
+D:\Fabinho\Documents\Alessandro\Programação\Cursos\Criando um APP simples de cadastro de séries em .NET\Series\obj\Debug\net5.0\Series.AssemblyInfo.cs
+D:\Fabinho\Documents\Alessandro\Programação\Cursos\Criando um APP simples de cadastro de séries em .NET\Series\obj\Debug\net5.0\Series.csproj.CoreCompileInputs.cache
+D:\Fabinho\Documents\Alessandro\Programação\Cursos\Criando um APP simples de cadastro de séries em .NET\Series\bin\Debug\net5.0\Series.exe
+D:\Fabinho\Documents\Alessandro\Programação\Cursos\Criando um APP simples de cadastro de séries em .NET\Series\bin\Debug\net5.0\Series.deps.json
+D:\Fabinho\Documents\Alessandro\Programação\Cursos\Criando um APP simples de cadastro de séries em .NET\Series\bin\Debug\net5.0\Series.runtimeconfig.json
+D:\Fabinho\Documents\Alessandro\Programação\Cursos\Criando um APP simples de cadastro de séries em .NET\Series\bin\Debug\net5.0\Series.runtimeconfig.dev.json
+D:\Fabinho\Documents\Alessandro\Programação\Cursos\Criando um APP simples de cadastro de séries em .NET\Series\bin\Debug\net5.0\Series.dll
+D:\Fabinho\Documents\Alessandro\Programação\Cursos\Criando um APP simples de cadastro de séries em .NET\Series\bin\Debug\net5.0\ref\Series.dll
+D:\Fabinho\Documents\Alessandro\Programação\Cursos\Criando um APP simples de cadastro de séries em .NET\Series\bin\Debug\net5.0\Series.pdb
+D:\Fabinho\Documents\Alessandro\Programação\Cursos\Criando um APP simples de cadastro de séries em .NET\Series\obj\Debug\net5.0\Series.dll
+D:\Fabinho\Documents\Alessandro\Programação\Cursos\Criando um APP simples de cadastro de séries em .NET\Series\obj\Debug\net5.0\ref\Series.dll
+D:\Fabinho\Documents\Alessandro\Programação\Cursos\Criando um APP simples de cadastro de séries em .NET\Series\obj\Debug\net5.0\Series.pdb
+D:\Fabinho\Documents\Alessandro\Programação\Cursos\Criando um APP simples de cadastro de séries em .NET\Series\obj\Debug\net5.0\Series.genruntimeconfig.cache
