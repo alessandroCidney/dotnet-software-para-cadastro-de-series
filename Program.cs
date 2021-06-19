@@ -64,10 +64,16 @@ namespace Series
 
             foreach (var serie in lista)
             {
-                if(!serie.retornaExcluido())
+                string serieExcluida;
+
+                if(serie.retornaExcluido())
                 {
-                    Console.WriteLine("#ID {0}: - {1}", serie.retornaId(), serie.retornaTitulo());
+                    serieExcluida = "(EXCLUÍDA)";
+                } else {
+                    serieExcluida = "";
                 }
+
+                Console.WriteLine("#ID {0}: - {1}  {2}", serie.retornaId(), serie.retornaTitulo(), serieExcluida);   
             }
         }
 
@@ -119,13 +125,9 @@ namespace Series
             int indiceSerie = int.Parse(Console.ReadLine());
 
             var serie = repositorio.RetornaPorId(indiceSerie);
-
-            if(!serie.retornaExcluido()) {
-                Console.WriteLine(serie);
-            } 
-            else {
-                Console.WriteLine("Esta série foi excluída.");
-            }
+            
+            Console.WriteLine(serie);
+            
         }
 
         private static void AtualizarSerie()

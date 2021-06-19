@@ -30,11 +30,20 @@ namespace Series
         // Reescrevendo o método ToString()
         public override string ToString()
         {
+            string excluido;
+
+            if(this.Excluido) {
+                excluido = "Sim";
+            } else {
+                excluido = "Não";
+            }
+
             string retorno = "";
             retorno += "Gênero: " + this.Genero + Environment.NewLine;
             retorno += "Titulo: " + this.Titulo + Environment.NewLine;
             retorno += "Descrição: " + this.Descricao + Environment.NewLine;
-            retorno += "Ano de início: " + this.Ano;
+            retorno += "Ano de início: " + this.Ano + Environment.NewLine;
+            retorno += "Excluída? - " + excluido; 
 
             return retorno;
         }
