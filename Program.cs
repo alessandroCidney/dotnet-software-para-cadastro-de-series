@@ -52,7 +52,11 @@ namespace Series
 
         private static void ListarSeries()
         {
-            Console.WriteLine("Listar Séries");
+            Console.Clear();
+            Console.WriteLine();
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("     Listagem de Séries");
+            Console.WriteLine("------------------------------");
 
             var lista = repositorio.Lista();
 
@@ -79,7 +83,11 @@ namespace Series
 
         private static void InserirSerie()
         {
-            Console.WriteLine("Inserir nova série");
+            Console.Clear();
+            Console.WriteLine();
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("     Inserção de Séries");
+            Console.WriteLine("------------------------------");
 
             foreach(int i in Enum.GetValues(typeof(Genero)))
             {
@@ -109,22 +117,58 @@ namespace Series
             );
 
             repositorio.Insere(novaSerie);
+            Console.Clear();
         }
 
         private static void ExcluirSerie()
         {
+            int opcaoEscolhida;
+            
+            Console.WriteLine();
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("     Exclusão de Séries");
+            Console.WriteLine("------------------------------");
+
             Console.Write("Digite o ID da série: ");
             int indiceSerie = int.Parse(Console.ReadLine());
 
-            repositorio.Exclui(indiceSerie);
+            Console.WriteLine();
+            Console.WriteLine("Deseja mesmo excluir a série de ID {0}?", indiceSerie);
+            Console.WriteLine("1 - SIM");
+            Console.WriteLine("2 - NÃO");
+
+            opcaoEscolhida = int.Parse(Console.ReadLine());
+
+            switch (opcaoEscolhida)
+            {
+                case 1:
+                    repositorio.Exclui(indiceSerie);
+                    Console.WriteLine("Série Excluída");
+                    break;
+
+                case 2:
+                    Console.WriteLine("Retornando ao menu de opções...");
+                    break;
+
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+
         }
 
         private static void VisualizarSerie()
         {
+            Console.Clear();
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("   Visualização de Séries");
+            Console.WriteLine("------------------------------");
+
             Console.Write("Digite o ID da série: ");
             int indiceSerie = int.Parse(Console.ReadLine());
 
             var serie = repositorio.RetornaPorId(indiceSerie);
+
+            Console.WriteLine();
             
             Console.WriteLine(serie);
             
@@ -132,6 +176,11 @@ namespace Series
 
         private static void AtualizarSerie()
         {
+            Console.WriteLine();
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("    Atualização de Séries");
+            Console.WriteLine("------------------------------");
+
             Console.Write("Digite o ID da série: ");
             int indiceSerie = int.Parse(Console.ReadLine());
 
@@ -168,9 +217,10 @@ namespace Series
         private static string ObterOpcaoUsuario()
         {
             Console.WriteLine();
-            Console.WriteLine("Bem vindo ao Console Séries!");
-            Console.WriteLine("Salvamos as suas séries de forma rápida e segura");
-            Console.WriteLine("--------------------------------------");
+            Console.WriteLine("-----------------------------------------------------------------");
+            Console.WriteLine("                Bem vindo ao Console Séries!");
+            Console.WriteLine("       Salvamos as suas séries de forma rápida e segura");
+            Console.WriteLine("-----------------------------------------------------------------");
 
             Console.WriteLine("Informe a opção desejada:");
 
